@@ -35,7 +35,7 @@ export const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* 3. CONTACTO Y REDES */}
+             
                     <div>
                         <h3 className="text-lg font-bold mb-4 text-gray-100">Síguenos</h3>
                         <div className="flex gap-4 mb-4">
@@ -56,7 +56,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                {/* SECCIÓN INFERIOR: COPYRIGHT */}
+ 
                 <div className="flex flex-col md:flex-row justify-between items-center pt-4 text-xs text-gray-500">
                     <p>&copy; {new Date().getFullYear()} Relatos de Papel. Todos los derechos reservados.</p>
                     <div className="flex gap-4 mt-2 md:mt-0">
