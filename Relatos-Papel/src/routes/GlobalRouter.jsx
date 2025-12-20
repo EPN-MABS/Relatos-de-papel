@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {Overview} from "../views/Overview";
 import {Header} from "../components/Header";
 import { Footer } from "../components/Footer";
+import { BookDetailPage } from "../views/BookDetailPage";
+import { CarritoPage } from "../views/CarritoPage";
 
 function GlobalRouter() {
     return (
@@ -11,7 +13,8 @@ function GlobalRouter() {
             <Routes>
      
                 <Route path="/" element={<Layout><Overview /></Layout>} />
-
+                <Route path="/detalle/:id" element={<Layout><BookDetailPage /></Layout>} />
+                <Route path="/carrito" element={<Layout><CarritoPage /></Layout>} />
             </Routes>
         </BrowserRouter>
     );
@@ -30,6 +33,5 @@ const Layout = ({ children }) => {
       </div>
     );
   };
-  
-  
+    
 export default GlobalRouter;
