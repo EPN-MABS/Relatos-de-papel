@@ -1,19 +1,17 @@
-import { useEffect, useState } from "react";
-
-import { booksData } from "../data/books"; 
+import { useState, useEffect } from "react";
+import { booksData } from "../data/books";
 
 export const useBooks = () => {
-    const [books, setBooks] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+  const [books, setBooks] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-    
-        setTimeout(() => {
-      
-            setBooks(booksData); 
-            setIsLoading(false);
-        }, 1500); 
-    }, []);
+  useEffect(() => {
+    setBooks(booksData);
+    setIsLoading(false);
+  }, []);
 
-    return { books, isLoading };
-}
+  const getBookById = (id) =>
+    books.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
+
+  return { books, isLoading, getBookById, setBooks };
+};

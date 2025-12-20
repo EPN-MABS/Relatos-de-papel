@@ -1,17 +1,13 @@
 import React from 'react';
 import GlobalRouter from "./routes/GlobalRouter";
-
-import {Footer} from "./components/Footer";
-
+import { GlobalProvider } from "./context/GlobalContext"; // importa el provider
 
 function App() {
-
-
-    return (
-        <>
-            <GlobalRouter></GlobalRouter>
-        </>
-    );
+  return (
+    <GlobalProvider>
+      <GlobalRouter />
+    </GlobalProvider>
+  );
 }
 
 export default App;
