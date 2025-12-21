@@ -8,7 +8,7 @@ export const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
     // se utilizan los hooks 
-    const { books, isLoading, getBookById, setBooks, categories, extractCategories } = useBooks();
+    const { books, isLoading, getBookById, setBooks, categories } = useBooks();
     const { cart, addToCart, removeFromCart, setCart } = useCart();
     const { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks } = useSearchBooks();
 
@@ -33,7 +33,6 @@ export const GlobalProvider = ({ children }) => {
                 setSearchCategory,
                 filterBooks,
                 categories,
-                extractCategories,
                 filterSidebarBooks
             }}
         >
