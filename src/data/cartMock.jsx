@@ -1,9 +1,3 @@
-/**
- * Mock de carrito
- * Simula libros añadidos al carrito por el usuario
- * No existe backend en esta actividad
- */
-
 export const cartMock = [
   {
     id: 1,

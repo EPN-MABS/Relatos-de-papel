@@ -1,23 +1,27 @@
 import React from "react";
 
-/**
- * CartSummary
- * Muestra el resumen del carrito de compras
- * Calcula subtotal, impuestos y total final
- */
 export const CartSummary = ({ items }) => {
 
   /**
    * Calcula el subtotal del carrito
    * Recorre todos los items y suma precio * cantidad
-   */
+   * acc va a significar el acumulador de lo que se lleva sumado hasta ahora
+   * Un ejemplo es que un libro valga $100 y tiene dos libros para comprar
+   * Entonces ahí es como que acc=0+(100*2)
+   * Y va acumulando 200
+   * 
+   * El 0 fl final es que empieza la suma desde 0
+   * 
+   * Reduce es lo mismo que un for que recorre todo
+   * 
+  */
   const subtotal = items.reduce((acc, item) => {
     return acc + item.price * item.quantity;
   }, 0);
 
+
   /**
-   * Impuesto simulado (10%)
-   * No existe backend ni reglas reales de facturación
+   * Impuesto supuestamente del 10%
    */
   const TAX_RATE = 0.10;
   const taxes = subtotal * TAX_RATE;
@@ -47,7 +51,6 @@ export const CartSummary = ({ items }) => {
         <span>S/ {taxes.toFixed(2)}</span>
       </div>
 
-      {/* Línea divisoria */}
       <hr className="border-gray-200" />
 
       {/* Total */}

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Overview } from "../views/Overview";
-import { Cart } from "../views/Cart"; // 👈 NUEVA VISTA
+import { Cart } from "../views/Cart"; 
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -37,10 +37,6 @@ function GlobalRouter() {
     );
 }
 
-/**
- * Layout común
- * Se reutiliza para todas las vistas
- */
 const Layout = ({ children }) => {
     return (
         <div className="min-h-screen flex flex-col">
