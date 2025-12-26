@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
-import { ModalOk } from "../components/ModalOk";
+import { ModalOk } from "../components/ModalOK";
 
 export const CarritoPage = () => {
     const { cart, setCart, setOpen, setCheckout } = useContext(GlobalContext);
