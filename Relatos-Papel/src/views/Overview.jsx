@@ -3,9 +3,10 @@ import { GlobalContext } from "../context/GlobalContext"; // ahora usamos el con
 import { Sidebar } from "../components/Sidebar";
 import { BookCard } from "../components/BookCard";
 import { Pagination } from "../components/Pagination";
+import { Loading } from "../components/Loading";
 
 export const Overview = () => {
-    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks } = useContext(GlobalContext); // consumimos libros desde el contexto
+    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks, getMessageById } = useContext(GlobalContext); // consumimos libros desde el contexto
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8; // Ajusta según cuántos quieras ver
     let booksToDisplay = books;
@@ -39,8 +40,8 @@ export const Overview = () => {
 
     if (isLoading)
         return (
-            <div className="p-10 text-center text-gray-500">
-                Cargando biblioteca...
+            <div className="text-center">
+                <Loading mensaje={getMessageById(2)} />
             </div>
         );
 
