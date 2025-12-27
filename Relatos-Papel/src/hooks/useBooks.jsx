@@ -1,17 +1,34 @@
 import { useState, useEffect } from "react";
 import { booksData } from "../data/books";
+import { messagesData } from "../data/messages";
 
 export const useBooks = () => {
-  const [books, setBooks] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+    const [books, setBooks] = useState([]);
+    const [messages, setMessages] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [categories, setCategories] = useState([]);
 
-  useEffect(() => {
-    setBooks(booksData);
-    setIsLoading(false);
-  }, []);
+    useEffect(() => {
+        setIsLoading(true);
+        const timer = setTimeout(() => {
+            setBooks(booksData);
+            const mapaObjetos = new Map();
+            booksData.forEach(obj => {
+                if (!mapaObjetos.has(obj.category)) {
+                    mapaObjetos.set(obj.category, obj.category);
+                }
+            });
+            setCategories(Array.from(mapaObjetos.values()));
+            setMessages(messagesData);
+            setIsLoading(false);
+        }, 5000);
+        return () => clearTimeout(timer);
+    }, []);
 
-  const getBookById = (id) =>
-    books.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
+    const getBookById = (id) =>
+        books.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
+    const getMessageById = (id) =>
+        messages.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
 
-  return { books, isLoading, getBookById, setBooks };
+    return { books, isLoading, setIsLoading, getBookById, setBooks, categories, messages, setMessages, getMessageById };
 };
