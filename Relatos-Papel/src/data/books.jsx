@@ -3,6 +3,7 @@ export const booksData = [
 { 
   id: 1, 
   title: "Cien años de soledad", 
+  image: "/images/books/cien-anos-de-soledad.svg",
   author: "Gabriel García Márquez", 
   price: 59.90, 
   category: "Novela", 
@@ -11,6 +12,7 @@ export const booksData = [
 { 
   id: 2, 
   title: "La ciudad y los perros", 
+  image: "/images/books/la-ciudad-y-los-perros.svg",
   author: "Mario Vargas Llosa", 
   price: 49.50, 
   category: "Novela", 
@@ -19,6 +21,7 @@ export const booksData = [
 { 
   id: 3, 
   title: "Rayuela", 
+  image: "/images/books/rayuela.svg",
   author: "Julio Cortázar", 
   price: 55.00, 
   category: "Novela", 
@@ -27,6 +30,7 @@ export const booksData = [
 { 
   id: 4, 
   title: "Pedro Páramo", 
+  image: "/images/books/pedro-paramo.svg",
   author: "Juan Rulfo", 
   price: 35.00, 
   category: "Novela", 
@@ -35,6 +39,7 @@ export const booksData = [
 { 
   id: 5, 
   title: "El Aleph", 
+  image: "/images/books/el-aleph.svg",
   author: "Jorge Luis Borges", 
   price: 42.00, 
   category: "Cuentos", 
@@ -43,6 +48,7 @@ export const booksData = [
 { 
   id: 6, 
   title: "Veinte poemas de amor", 
+  image: "/images/books/veinte-poemas-de-amor.svg",
   author: "Pablo Neruda", 
   price: 29.90, 
   category: "Poesía", 
@@ -51,6 +57,7 @@ export const booksData = [
 { 
   id: 7, 
   title: "La casa de los espíritus", 
+  image: "/images/books/la-casa-de-los-espiritus.svg",
   author: "Isabel Allende", 
   price: 48.00, 
   category: "Realismo Mágico", 
@@ -59,6 +66,7 @@ export const booksData = [
 { 
   id: 8, 
   title: "El amor en los tiempos del cólera", 
+  image: "/images/books/el-amor-en-los-tiempos-del-colera.svg",
   author: "Gabriel García Márquez", 
   price: 52.00, 
   category: "Novela", 
@@ -67,6 +75,7 @@ export const booksData = [
 { 
   id: 9, 
   title: "Ficciones", 
+  image: "/images/books/ficciones.svg",
   author: "Jorge Luis Borges", 
   price: 45.00, 
   category: "Cuentos", 
@@ -75,6 +84,7 @@ export const booksData = [
 { 
   id: 10, 
   title: "Crónica de una muerte anunciada", 
+  image: "/images/books/cronica-de-una-muerte-anunciada.svg",
   author: "Gabriel García Márquez", 
   price: 38.00, 
   category: "Novela", 
@@ -86,6 +96,7 @@ export const booksData = [
 { 
   id: 11, 
   title: "Harry Potter y la Piedra Filosofal", 
+  image: "/images/books/harry-potter-piedra-filosofal.svg",
   author: "J.K. Rowling", 
   price: 65.00, 
   category: "Fantasía", 
@@ -94,6 +105,7 @@ export const booksData = [
 { 
   id: 12, 
   title: "El Señor de los Anillos: La Comunidad", 
+  image: "/images/books/el-senor-de-los-anillos-la-comunidad.svg",
   author: "J.R.R. Tolkien", 
   price: 79.90, 
   category: "Fantasía", 
@@ -102,6 +114,7 @@ export const booksData = [
 { 
   id: 13, 
   title: "El Nombre del Viento", 
+  image: "/images/books/el-nombre-del-viento.svg",
   author: "Patrick Rothfuss", 
   price: 72.00, 
   category: "Fantasía", 
@@ -110,6 +123,7 @@ export const booksData = [
 { 
   id: 14, 
   title: "Juego de Tronos", 
+  image: "/images/books/juego-de-tronos.svg",
   author: "George R.R. Martin", 
   price: 85.00, 
   category: "Fantasía", 
@@ -118,6 +132,7 @@ export const booksData = [
 { 
   id: 15, 
   title: "El Hobbit", 
+  image: "/images/books/el-hobbit.svg",
   author: "J.R.R. Tolkien", 
   price: 55.00, 
   category: "Fantasía", 
@@ -126,6 +141,7 @@ export const booksData = [
 { 
   id: 16, 
   title: "El Temor de un Hombre Sabio", 
+  image: "/images/books/el-temor-de-un-hombre-sabio.svg",
   author: "Patrick Rothfuss", 
   price: 89.00, 
   category: "Fantasía", 
@@ -134,6 +150,7 @@ export const booksData = [
 { 
   id: 17, 
   title: "Las Crónicas de Narnia", 
+  image: "/images/books/las-cronicas-de-narnia.svg",
   author: "C.S. Lewis", 
   price: 60.00, 
   category: "Fantasía", 
@@ -142,6 +159,7 @@ export const booksData = [
 { 
   id: 18, 
   title: "El Silmarillion", 
+  image: "/images/books/el-silmarillion.svg",
   author: "J.R.R. Tolkien", 
   price: 68.00, 
   category: "Fantasía", 
@@ -150,6 +168,7 @@ export const booksData = [
 { 
   id: 19, 
   title: "Harry Potter y el Prisionero de Azkaban", 
+  image: "/images/books/harry-potter-prisionero-azkaban.svg",
   author: "J.K. Rowling", 
   price: 69.00, 
   category: "Fantasía", 
@@ -158,6 +177,7 @@ export const booksData = [
 { 
   id: 20, 
   title: "Animales Fantásticos", 
+  image: "/images/books/animales-fantasticos.svg",
   author: "J.K. Rowling", 
   price: 45.00, 
   category: "Fantasía", 
@@ -169,6 +189,7 @@ export const booksData = [
 { 
   id: 21, 
   title: "Dune", 
+  image: "/images/books/dune.svg",
   author: "Frank Herbert", 
   price: 75.00, 
   category: "Ciencia Ficción", 
@@ -177,6 +198,7 @@ export const booksData = [
 { 
   id: 22, 
   title: "1984", 
+  image: "/images/books/1984.svg",
   author: "George Orwell", 
   price: 42.50, 
   category: "Ciencia Ficción", 
@@ -185,6 +207,7 @@ export const booksData = [
 { 
   id: 23, 
   title: "Un mundo feliz", 
+  image: "/images/books/un-mundo-feliz.svg",
   author: "Aldous Huxley", 
   price: 36.00, 
   category: "Ciencia Ficción", 
@@ -193,6 +216,7 @@ export const booksData = [
 { 
   id: 24, 
   title: "Fahrenheit 451", 
+  image: "/images/books/fahrenheit-451.svg",
   author: "Ray Bradbury", 
   price: 39.00, 
   category: "Ciencia Ficción", 
@@ -201,6 +225,7 @@ export const booksData = [
 { 
   id: 25, 
   title: "El problema de los tres cuerpos", 
+  image: "/images/books/el-problema-de-los-tres-cuerpos.svg",
   author: "Cixin Liu", 
   price: 68.00, 
   category: "Ciencia Ficción", 
@@ -209,6 +234,7 @@ export const booksData = [
 { 
   id: 26, 
   title: "Yo, Robot", 
+  image: "/images/books/yo-robot.svg",
   author: "Isaac Asimov", 
   price: 44.00, 
   category: "Ciencia Ficción", 
@@ -217,6 +243,7 @@ export const booksData = [
 { 
   id: 27, 
   title: "Fundación", 
+  image: "/images/books/fundacion.svg",
   author: "Isaac Asimov", 
   price: 50.00, 
   category: "Ciencia Ficción", 
@@ -225,6 +252,7 @@ export const booksData = [
 { 
   id: 28, 
   title: "Ready Player One", 
+  image: "/images/books/ready-player-one.svg",
   author: "Ernest Cline", 
   price: 49.90, 
   category: "Ciencia Ficción", 
@@ -233,6 +261,7 @@ export const booksData = [
 { 
   id: 29, 
   title: "Neuromante", 
+  image: "/images/books/neuromante.svg",
   author: "William Gibson", 
   price: 55.00, 
   category: "Cyberpunk", 
@@ -241,6 +270,7 @@ export const booksData = [
 { 
   id: 30, 
   title: "La Guía del Autoestopista Galáctico", 
+  image: "/images/books/la-guia-del-autoestopista-galactico.svg",
   author: "Douglas Adams", 
   price: 40.00, 
   category: "Ciencia Ficción", 
@@ -252,6 +282,7 @@ export const booksData = [
 { 
   id: 31, 
   title: "It (Eso)", 
+  image: "/images/books/it-eso.svg",
   author: "Stephen King", 
   price: 82.00, 
   category: "Terror", 
@@ -260,6 +291,7 @@ export const booksData = [
 { 
   id: 32, 
   title: "El Resplandor", 
+  image: "/images/books/el-resplandor.svg",
   author: "Stephen King", 
   price: 62.00, 
   category: "Terror", 
@@ -268,6 +300,7 @@ export const booksData = [
 { 
   id: 33, 
   title: "El Código Da Vinci", 
+  image: "/images/books/el-codigo-da-vinci.svg",
   author: "Dan Brown", 
   price: 52.00, 
   category: "Thriller", 
@@ -276,6 +309,7 @@ export const booksData = [
 { 
   id: 34, 
   title: "La chica del tren", 
+  image: "/images/books/la-chica-del-tren.svg",
   author: "Paula Hawkins", 
   price: 48.00, 
   category: "Thriller", 
@@ -284,6 +318,7 @@ export const booksData = [
 { 
   id: 35, 
   title: "Misery", 
+  image: "/images/books/misery.svg",
   author: "Stephen King", 
   price: 58.00, 
   category: "Terror", 
@@ -292,6 +327,7 @@ export const booksData = [
 { 
   id: 36, 
   title: "El Silencio de los Corderos", 
+  image: "/images/books/el-silencio-de-los-corderos.svg",
   author: "Thomas Harris", 
   price: 45.00, 
   category: "Terror", 
@@ -300,6 +336,7 @@ export const booksData = [
 { 
   id: 37, 
   title: "Drácula", 
+  image: "/images/books/dracula.svg",
   author: "Bram Stoker", 
   price: 32.00, 
   category: "Terror", 
@@ -308,6 +345,7 @@ export const booksData = [
 { 
   id: 38, 
   title: "Los hombres que no amaban a las mujeres", 
+  image: "/images/books/los-hombres-que-no-amaban-a-las-mujeres.svg",
   author: "Stieg Larsson", 
   price: 59.00, 
   category: "Thriller", 
@@ -316,6 +354,7 @@ export const booksData = [
 { 
   id: 39, 
   title: "El Psicoanalista", 
+  image: "/images/books/el-psicoanalista.svg",
   author: "John Katzenbach", 
   price: 55.00, 
   category: "Thriller", 
@@ -324,16 +363,19 @@ export const booksData = [
 { 
   id: 40, 
   title: "La llamada de Cthulhu", 
+  image: "/images/books/la-llamada-de-cthulhu.svg",
   author: "H.P. Lovecraft", 
   price: 28.00, 
   category: "Terror", 
   review: "Relato que introduce el mito de Cthulhu, una criatura cósmica que simboliza el horror y la insignificancia humana frente al universo." 
 },
 
+
     // --- DESARROLLO PERSONAL Y NEGOCIOS (41-50) ---
 { 
   id: 41, 
   title: "Hábitos Atómicos", 
+  image: "/images/books/habitos-atomicos.svg",
   author: "James Clear", 
   price: 69.00, 
   category: "Desarrollo", 
@@ -342,6 +384,7 @@ export const booksData = [
 { 
   id: 42, 
   title: "Padre Rico, Padre Pobre", 
+  image: "/images/books/padre-rico-padre-pobre.svg",
   author: "Robert Kiyosaki", 
   price: 55.00, 
   category: "Finanzas", 
@@ -350,6 +393,7 @@ export const booksData = [
 { 
   id: 43, 
   title: "Piense y Hágase Rico", 
+  image: "/images/books/piense-y-hagase-rico.svg",
   author: "Napoleon Hill", 
   price: 38.00, 
   category: "Finanzas", 
@@ -358,6 +402,7 @@ export const booksData = [
 { 
   id: 44, 
   title: "Cómo ganar amigos e influir...", 
+  image: "/images/books/como-ganar-amigos-e-influir.svg",
   author: "Dale Carnegie", 
   price: 49.00, 
   category: "Desarrollo", 
@@ -366,6 +411,7 @@ export const booksData = [
 { 
   id: 45, 
   title: "El Poder del Ahora", 
+  image: "/images/books/el-poder-del-ahora.svg",
   author: "Eckhart Tolle", 
   price: 45.00, 
   category: "Espiritualidad", 
@@ -374,6 +420,7 @@ export const booksData = [
 { 
   id: 46, 
   title: "Los 7 hábitos de la gente altamente efectiva", 
+  image: "/images/books/los-7-habitos-de-la-gente-altamente-efectiva.svg",
   author: "Stephen Covey", 
   price: 58.00, 
   category: "Desarrollo", 
@@ -382,6 +429,7 @@ export const booksData = [
 { 
   id: 47, 
   title: "El Monje que vendió su Ferrari", 
+  image: "/images/books/el-monje-que-vendio-su-ferrari.svg",
   author: "Robin Sharma", 
   price: 42.00, 
   category: "Desarrollo", 
@@ -390,6 +438,7 @@ export const booksData = [
 { 
   id: 48, 
   title: "Inteligencia Emocional", 
+  image: "/images/books/inteligencia-emocional.svg",
   author: "Daniel Goleman", 
   price: 52.00, 
   category: "Psicología", 
@@ -398,6 +447,7 @@ export const booksData = [
 { 
   id: 49, 
   title: "El Club de las 5 de la mañana", 
+  image: "/images/books/el-club-de-las-5-de-la-manana.svg",
   author: "Robin Sharma", 
   price: 54.00, 
   category: "Desarrollo", 
@@ -406,6 +456,7 @@ export const booksData = [
 { 
   id: 50, 
   title: "Sapiens: De animales a dioses", 
+  image: "/images/books/sapiens-de-animales-a-dioses.svg",
   author: "Yuval Noah Harari", 
   price: 75.00, 
   category: "Historia", 
@@ -417,6 +468,7 @@ export const booksData = [
 { 
   id: 51, 
   title: "Clean Code", 
+  image: "/images/books/clean-code.svg",
   author: "Robert C. Martin", 
   price: 120.00, 
   category: "Tecnología", 
@@ -425,6 +477,7 @@ export const booksData = [
 { 
   id: 52, 
   title: "The Pragmatic Programmer", 
+  image: "/images/books/the-pragmatic-programmer.svg",
   author: "Andrew Hunt", 
   price: 115.00, 
   category: "Tecnología", 
@@ -433,6 +486,7 @@ export const booksData = [
 { 
   id: 53, 
   title: "Javascript: The Good Parts", 
+  image: "/images/books/javascript-the-good-parts.svg",
   author: "Douglas Crockford", 
   price: 90.00, 
   category: "Tecnología", 
@@ -441,6 +495,7 @@ export const booksData = [
 { 
   id: 54, 
   title: "Cracking the Coding Interview", 
+  image: "/images/books/cracking-the-coding-interview.svg",
   author: "Gayle Laakmann", 
   price: 130.00, 
   category: "Tecnología", 
@@ -449,6 +504,7 @@ export const booksData = [
 { 
   id: 55, 
   title: "Design Patterns", 
+  image: "/images/books/design-patterns.svg",
   author: "Erich Gamma", 
   price: 140.00, 
   category: "Tecnología", 
@@ -457,6 +513,7 @@ export const booksData = [
 { 
   id: 56, 
   title: "Eloquent JavaScript", 
+  image: "/images/books/eloquent-javascript.svg",
   author: "Marijn Haverbeke", 
   price: 85.00, 
   category: "Tecnología", 
@@ -465,6 +522,7 @@ export const booksData = [
 { 
   id: 57, 
   title: "You Don't Know JS", 
+  image: "/images/books/you-dont-know-js.svg",
   author: "Kyle Simpson", 
   price: 75.00, 
   category: "Tecnología", 
@@ -473,6 +531,7 @@ export const booksData = [
 { 
   id: 58, 
   title: "Refactoring", 
+  image: "/images/books/refactoring.svg",
   author: "Martin Fowler", 
   price: 125.00, 
   category: "Tecnología", 
@@ -481,6 +540,7 @@ export const booksData = [
 { 
   id: 59, 
   title: "Introduction to Algorithms", 
+  image: "/images/books/introduction-to-algorithms.svg",
   author: "Thomas H. Cormen", 
   price: 180.00, 
   category: "Tecnología", 
@@ -489,6 +549,7 @@ export const booksData = [
 { 
   id: 60, 
   title: "Steve Jobs", 
+  image: "/images/books/steve-jobs.svg",
   author: "Walter Isaacson", 
   price: 65.00, 
   category: "Biografía", 
@@ -498,6 +559,7 @@ export const booksData = [
     { 
   id: 61, 
   title: "Don Quijote de la Mancha", 
+  image: "/images/books/don-quijote-de-la-mancha.svg",
   author: "Miguel de Cervantes", 
   price: 45.00, 
   category: "Clásicos", 
@@ -506,6 +568,7 @@ export const booksData = [
 { 
   id: 62, 
   title: "Orgullo y Prejuicio", 
+  image: "/images/books/orgullo-y-prejuicio.svg",
   author: "Jane Austen", 
   price: 39.90, 
   category: "Romance", 
@@ -514,6 +577,7 @@ export const booksData = [
 { 
   id: 63, 
   title: "La Odisea", 
+  image: "/images/books/la-odisea.svg",
   author: "Homero", 
   price: 29.90, 
   category: "Clásicos", 
@@ -522,6 +586,7 @@ export const booksData = [
 { 
   id: 64, 
   title: "La Divina Comedia", 
+  image: "/images/books/la-divina-comedia.svg",
   author: "Dante Alighieri", 
   price: 55.00, 
   category: "Clásicos", 
@@ -530,6 +595,7 @@ export const booksData = [
 { 
   id: 65, 
   title: "Crimen y Castigo", 
+  image: "/images/books/crimen-y-castigo.svg",
   author: "Fiódor Dostoyevski", 
   price: 55.00, 
   category: "Clásicos", 
@@ -538,6 +604,7 @@ export const booksData = [
 { 
   id: 66, 
   title: "Matar a un ruiseñor", 
+  image: "/images/books/matar-a-un-ruisenor.svg",
   author: "Harper Lee", 
   price: 41.00, 
   category: "Literatura", 
@@ -546,6 +613,7 @@ export const booksData = [
 { 
   id: 67, 
   title: "El Gran Gatsby", 
+  image: "/images/books/el-gran-gatsby.svg",
   author: "F. Scott Fitzgerald", 
   price: 38.00, 
   category: "Literatura", 
@@ -554,6 +622,7 @@ export const booksData = [
 { 
   id: 68, 
   title: "En busca del tiempo perdido", 
+  image: "/images/books/en-busca-del-tiempo-perdido.svg",
   author: "Marcel Proust", 
   price: 80.00, 
   category: "Clásicos", 
@@ -562,6 +631,7 @@ export const booksData = [
 { 
   id: 69, 
   title: "Moby Dick", 
+  image: "/images/books/moby-dick.svg",
   author: "Herman Melville", 
   price: 45.00, 
   category: "Clásicos", 
@@ -570,6 +640,7 @@ export const booksData = [
 { 
   id: 70, 
   title: "Los Miserables", 
+  image: "/images/books/los-miserables.svg",
   author: "Victor Hugo", 
   price: 65.00, 
   category: "Clásicos", 
@@ -581,6 +652,7 @@ export const booksData = [
 { 
   id: 71, 
   title: "Sherlock Holmes: Estudio en Escarlata", 
+  image: "/images/books/sherlock-holmes-estudio-en-escarlata.svg",
   author: "Arthur Conan Doyle", 
   price: 29.00, 
   category: "Misterio", 
@@ -589,6 +661,7 @@ export const booksData = [
 { 
   id: 72, 
   title: "Asesinato en el Orient Express", 
+  image: "/images/books/asesinato-en-el-orient-express.svg",
   author: "Agatha Christie", 
   price: 35.00, 
   category: "Misterio", 
@@ -597,6 +670,7 @@ export const booksData = [
 { 
   id: 73, 
   title: "El Sabueso de los Baskerville", 
+  image: "/images/books/el-sabueso-de-los-baskerville.svg",
   author: "Arthur Conan Doyle", 
   price: 32.00, 
   category: "Misterio", 
@@ -605,6 +679,7 @@ export const booksData = [
 { 
   id: 74, 
   title: "Diez Negritos", 
+  image: "/images/books/diez-negritos.svg",
   author: "Agatha Christie", 
   price: 36.00, 
   category: "Misterio", 
@@ -613,6 +688,7 @@ export const booksData = [
 { 
   id: 75, 
   title: "La Sombra del Viento", 
+  image: "/images/books/la-sombra-del-viento.svg",
   author: "Carlos Ruiz Zafón", 
   price: 59.00, 
   category: "Misterio", 
@@ -621,6 +697,7 @@ export const booksData = [
 { 
   id: 76, 
   title: "El Padrino", 
+  image: "/images/books/el-padrino.svg",
   author: "Mario Puzo", 
   price: 48.00, 
   category: "Novela", 
@@ -629,6 +706,7 @@ export const booksData = [
 { 
   id: 77, 
   title: "Perdida", 
+  image: "/images/books/perdida.svg",
   author: "Gillian Flynn", 
   price: 44.00, 
   category: "Thriller", 
@@ -637,6 +715,7 @@ export const booksData = [
 { 
   id: 78, 
   title: "El nombre de la rosa", 
+  image: "/images/books/el-nombre-de-la-rosa.svg",
   author: "Umberto Eco", 
   price: 52.00, 
   category: "Histórica", 
@@ -645,6 +724,7 @@ export const booksData = [
 { 
   id: 79, 
   title: "Ángeles y Demonios", 
+  image: "/images/books/angeles-y-demonios.svg",
   author: "Dan Brown", 
   price: 50.00, 
   category: "Thriller", 
@@ -653,16 +733,19 @@ export const booksData = [
 { 
   id: 80, 
   title: "La verdad sobre el caso Harry Quebert", 
+  image: "/images/books/la-verdad-sobre-el-caso-harry-quebert.svg",
   author: "Joël Dicker", 
   price: 62.00, 
   category: "Misterio", 
   review: "Un escritor investiga a su mentor acusado de asesinato, desvelando secretos ocultos en un pequeño pueblo." 
 },
 
+
     // --- INFANTIL Y JUVENIL (81-90) ---
 { 
   id: 81, 
   title: "El Principito", 
+  image: "/images/books/el-principito.svg",
   author: "Antoine de Saint-Exupéry", 
   price: 25.00, 
   category: "Infantil", 
@@ -671,6 +754,7 @@ export const booksData = [
 { 
   id: 82, 
   title: "Alicia en el país de las maravillas", 
+  image: "/images/books/alicia-en-el-pais-de-las-maravillas.svg",
   author: "Lewis Carroll", 
   price: 30.00, 
   category: "Infantil", 
@@ -679,6 +763,7 @@ export const booksData = [
 { 
   id: 83, 
   title: "Charlie y la fábrica de chocolate", 
+  image: "/images/books/charlie-y-la-fabrica-de-chocolate.svg",
   author: "Roald Dahl", 
   price: 28.00, 
   category: "Infantil", 
@@ -687,6 +772,7 @@ export const booksData = [
 { 
   id: 84, 
   title: "Las aventuras de Tom Sawyer", 
+  image: "/images/books/las-aventuras-de-tom-sawyer.svg",
   author: "Mark Twain", 
   price: 32.00, 
   category: "Aventuras", 
@@ -695,6 +781,7 @@ export const booksData = [
 { 
   id: 85, 
   title: "Matilda", 
+  image: "/images/books/matilda.svg",
   author: "Roald Dahl", 
   price: 29.00, 
   category: "Infantil", 
@@ -703,6 +790,7 @@ export const booksData = [
 { 
   id: 86, 
   title: "Donde viven los monstruos", 
+  image: "/images/books/donde-viven-los-monstruos.svg",
   author: "Maurice Sendak", 
   price: 35.00, 
   category: "Infantil", 
@@ -711,6 +799,7 @@ export const booksData = [
 { 
   id: 87, 
   title: "Los Juegos del Hambre", 
+  image: "/images/books/los-juegos-del-hambre.svg",
   author: "Suzanne Collins", 
   price: 45.00, 
   category: "Juvenil", 
@@ -719,6 +808,7 @@ export const booksData = [
 { 
   id: 88, 
   title: "Bajo la misma estrella", 
+  image: "/images/books/bajo-la-misma-estrella.svg",
   author: "John Green", 
   price: 42.00, 
   category: "Juvenil", 
@@ -727,6 +817,7 @@ export const booksData = [
 { 
   id: 89, 
   title: "Percy Jackson y el ladrón del rayo", 
+  image: "/images/books/percy-jackson-y-el-ladron-del-rayo.svg",
   author: "Rick Riordan", 
   price: 48.00, 
   category: "Fantasía", 
@@ -735,6 +826,7 @@ export const booksData = [
 { 
   id: 90, 
   title: "Coraline", 
+  image: "/images/books/coraline.svg",
   author: "Neil Gaiman", 
   price: 38.00, 
   category: "Juvenil", 
@@ -746,6 +838,7 @@ export const booksData = [
   { 
   id: 91, 
   title: "El Arte de la Guerra", 
+  image: "/images/books/el-arte-de-la-guerra.svg",
   author: "Sun Tzu", 
   price: 25.00, 
   category: "Filosofía", 
@@ -754,6 +847,7 @@ export const booksData = [
 { 
   id: 92, 
   title: "Meditaciones", 
+  image: "/images/books/meditaciones.svg",
   author: "Marco Aurelio", 
   price: 30.00, 
   category: "Filosofía", 
@@ -762,6 +856,7 @@ export const booksData = [
 { 
   id: 93, 
   title: "Breve historia del tiempo", 
+  image: "/images/books/breve-historia-del-tiempo.svg",
   author: "Stephen Hawking", 
   price: 48.00, 
   category: "Ciencia", 
@@ -770,6 +865,7 @@ export const booksData = [
 { 
   id: 94, 
   title: "Cosmos", 
+  image: "/images/books/cosmos.svg",
   author: "Carl Sagan", 
   price: 65.00, 
   category: "Ciencia", 
@@ -778,6 +874,7 @@ export const booksData = [
 { 
   id: 95, 
   title: "Ana Frank: Diario de una joven", 
+  image: "/images/books/ana-frank-diario-de-una-joven.svg",
   author: "Ana Frank", 
   price: 35.00, 
   category: "Biografía", 
@@ -786,6 +883,7 @@ export const booksData = [
 { 
   id: 96, 
   title: "El hombre en busca de sentido", 
+  image: "/images/books/el-hombre-en-busca-de-sentido.svg",
   author: "Viktor Frankl", 
   price: 39.00, 
   category: "Psicología", 
@@ -794,6 +892,7 @@ export const booksData = [
 { 
   id: 97, 
   title: "Maus", 
+  image: "/images/books/maus.svg",
   author: "Art Spiegelman", 
   price: 55.00, 
   category: "Novela Gráfica", 
@@ -802,6 +901,7 @@ export const booksData = [
 { 
   id: 98, 
   title: "Persépolis", 
+  image: "/images/books/persepolis.svg",
   author: "Marjane Satrapi", 
   price: 48.00, 
   category: "Novela Gráfica", 
@@ -810,6 +910,7 @@ export const booksData = [
 { 
   id: 99, 
   title: "Watchmen", 
+  image: "/images/books/watchmen.svg",
   author: "Alan Moore", 
   price: 75.00, 
   category: "Novela Gráfica", 
@@ -818,10 +919,10 @@ export const booksData = [
 { 
   id: 100, 
   title: "V de Vendetta", 
+  image: "/images/books/v-de-vendetta.svg",
   author: "Alan Moore", 
   price: 70.00, 
   category: "Novela Gráfica", 
   review: "Novela gráfica distópica donde un enmascarado lucha contra un régimen totalitario, símbolo de resistencia y libertad." 
 }
-
 ];
