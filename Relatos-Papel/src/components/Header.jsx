@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Search, ShoppingCart, User, BookOpen } from "lucide-react";
+import { Search, ShoppingCart, Heart, User, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
 
@@ -37,6 +37,15 @@ export const Header = () => {
 
           {/* Iconos lado derecho */}
           <div className="flex items-center gap-4">
+
+            {/* Favorito-corazon */}
+            <button className="p-2 text-blue-brand hover:text-black hover:bg-gray-100 rounded-full transition-all">
+              <Heart size={24} strokeWidth={2} />
+            </button>
+
+            {/* Separador */}
+            <div className="h-6 w-px bg-gray-200 mx-1"></div>
+
             {/* Carrito */}
             <Link
               to="/carrito"
