@@ -45,8 +45,9 @@ export const BookCard = ({ book }) => {
             Detalle
           </Link>
 
-          {/* Botón Añadir (sin acción aún) */}
-           <AddCartButton book={book} />
+          {/* Agregar al carrito */}
+ 
+          <AddCartButton book={book} />
         </div>
       </div>
     </div>

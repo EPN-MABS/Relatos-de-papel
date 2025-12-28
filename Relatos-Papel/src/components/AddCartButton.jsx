@@ -2,11 +2,16 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 const AddCartButton = ({ book }) => {
-  const { addToCart } = useContext(GlobalContext);
+  const { addToCart, setOpen } = useContext(GlobalContext);
+
+  const handleAdd = () => {
+    addToCart(book);   // añade el libro al carrito
+    setOpen(true);     // abre el modal global
+  };
 
   return (
     <button
-      onClick={() => addToCart(book)}
+      onClick={handleAdd}
       className="text-xs font-medium bg-blue-brand text-white hover:bg-blue-600 px-3 py-2 rounded-lg transition-colors cursor-pointer"
     >
       Añadir
