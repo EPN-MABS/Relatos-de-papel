@@ -96,7 +96,7 @@ export const GlobalProvider = ({ children }) => {
                 filterSidebarBooks,
                 HandleDelete,
                 HandleFilterChange,
-                handleCargar
+                handleCargar,
 
                 // 💬 Mensajes
                 messages,
