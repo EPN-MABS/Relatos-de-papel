@@ -8,6 +8,7 @@ import { BookDetailPage } from "../views/BookDetailPage";
 import { CarritoPage } from "../views/CarritoPage";
 import { Landing } from "../views/Landing";
 import { GlobalContext } from "../context/GlobalContext";
+import Checkout from "../views/Checkout";
 
 function GlobalRouter() {
     const { setSearchCategory } = useContext(GlobalContext);
@@ -21,6 +22,8 @@ function GlobalRouter() {
                 <Route path="/overview" element={<Layout><Overview /></Layout>} />
                 <Route path="/detalle/:id" element={<Layout><BookDetailPage /></Layout>} />
                 <Route path="/carrito" element={<Layout><CarritoPage /></Layout>} />
+                <Route path="/checkout" element={<Layout><Checkout /></Layout>} />
+
              </Routes>
         </BrowserRouter>
     );

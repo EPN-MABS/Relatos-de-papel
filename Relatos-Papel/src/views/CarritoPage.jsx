@@ -105,7 +105,7 @@ export const CarritoPage = () => {
 
         <button
           id="pagar"
-          onClick={handleCheckout}
+          onClick={() => navigate("/checkout")}
           className="bg-blue-brand text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
         >
           Pagar
