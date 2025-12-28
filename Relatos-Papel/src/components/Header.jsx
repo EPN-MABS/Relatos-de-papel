@@ -11,23 +11,21 @@ export const Header = () => {
     setCheckout(false);
   };
 
-  return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 gap-8">
-
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group cursor-pointer">
-            <div className="bg-blue-brand text-white p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
-              <BookOpen size={24} strokeWidth={2.5} />
-            </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">
-              Relatos <span className=" text-blue-brand ml-1">de Papel</span>
-            </span>
-          </Link>
-
-          {/* Buscador */}
-          <SearchBook />
+    return (
+        <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center h-16 gap-8">
+                    {/* Logo */}
+                    <Link to="/" className="flex items-center gap-2 group cursor-pointer">
+                        <div className="bg-blue-brand text-white p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
+                            <BookOpen size={24} strokeWidth={2.5} />
+                        </div>
+                        <span className="text-xl font-bold text-gray-900 tracking-tight">
+                            Relatos <span className=" text-blue-brand ml-1">de Papel</span>
+                        </span>
+                    </Link>
+                    {/* Buscador */}
+                    <SearchBook />
 
           {/* Iconos lado derecho */}
           <div className="flex items-center gap-4">
