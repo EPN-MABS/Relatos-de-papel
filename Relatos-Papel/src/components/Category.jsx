@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from "../context/GlobalContext";
 
 export const Category = () => {
-    const { categories } = useContext(GlobalContext);
+    const { categories, handleCargar  } = useContext(GlobalContext);
 
     useEffect(() => {
         const categorySelect = document.getElementById("category");
@@ -19,6 +19,7 @@ export const Category = () => {
                 categorySelect.appendChild(option);
             }
         }
+        handleCargar();
     }, [categories]);
 
 

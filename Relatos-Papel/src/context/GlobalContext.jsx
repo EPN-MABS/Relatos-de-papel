@@ -10,11 +10,11 @@ export const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
     // se utilizan los hooks 
-    const { books, isLoading, setIsLoading, getBookById, setBooks, categories, messages, getMessageById, setMessages } = useBooks();
+    const { books, isLoading, setIsLoading, getBookById, setBooks, categories, messages, getMessageById, setMessages, carga,setCarga } = useBooks();
     const { cart, addToCart, removeFromCart, setCart } = useCart();
     const { open, checkout, setCheckout, setOpen } = useModal();
-    const { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks } = useSearchBooks();
-
+    const { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks, HandleFilterChange, HandleDelete, handleCargar } = useSearchBooks();
+    
     return (
         <GlobalContext.Provider
             value={{
@@ -44,7 +44,12 @@ export const GlobalProvider = ({ children }) => {
                 setOpen,
                 messages,
                 getMessageById,
-                setMessages
+                setMessages,
+                carga,
+                setCarga,
+                HandleDelete,
+                HandleFilterChange,
+                handleCargar
             }}
         >
             {children}
