@@ -27,5 +27,42 @@ export const useSearchBooks = () => {
         return filteredBooks;
     };
 
-    return { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks };
+    const HandleFilterChange = () => {
+        setSearchTitle(document.getElementById("titulo").value);
+        setSearchAutor(document.getElementById("autor").value);
+        setSearchQuery(document.getElementById("clave").value);
+        setSearchCategory(document.getElementById("category").value);
+        const deleteButton = document.getElementById("deleteFilter");
+        deleteButton.classList.remove("hidden");
+    }
+
+    const HandleDelete = () => {
+        document.getElementById("titulo").value = "";
+        document.getElementById("autor").value = "";
+        document.getElementById("clave").value = "";
+        document.getElementById("category").value = "";
+        setSearchTitle(document.getElementById("titulo").value);
+        setSearchAutor(document.getElementById("autor").value);
+        setSearchQuery(document.getElementById("clave").value);
+        setSearchCategory(document.getElementById("category").value);
+        const deleteButton = document.getElementById("deleteFilter");
+        deleteButton.classList.add("hidden");
+    }
+
+    const handleCargar = () => {
+        if (searchCategory.length !== 0 && (typeof searchCategory === 'string')) {
+            const category = document.getElementById("category");
+            category.value = searchCategory;
+            const deleteButton = document.getElementById("deleteFilter");
+            deleteButton.classList.remove("hidden");
+        } else {
+            const category = document.getElementById("category");
+            category.value = '';
+            const deleteButton = document.getElementById("deleteFilter");
+            deleteButton.classList.add("hidden");
+        }
+    }
+
+
+    return { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks, HandleFilterChange, HandleDelete, handleCargar };
 }
