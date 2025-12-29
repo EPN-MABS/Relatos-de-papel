@@ -60,7 +60,7 @@ export const Footer = () => {
                         <h3 className="text-lg font-bold mb-4 text-gray-100">Metodo de Pago</h3>
                         <div className="flex gap-4 mb-4">
                             <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-all group">
-                                <img className = "w-40" src="src/assets/images/visa.png" alt="visa" />
+                                <img className = "w-40" src="public/images/credit-card.png" alt="visa" />
                             </a>
                             
                         </div>
