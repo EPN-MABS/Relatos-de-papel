@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ShoppingCart, User, BookOpen } from "lucide-react";
+import { ShoppingCart, Heart, User ,BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalContext";
 import { SearchBook } from "./SearchBook";
@@ -27,21 +27,30 @@ export const Header = () => {
                     {/* Buscador */}
                     <SearchBook />
 
-          {/* Iconos lado derecho */}
-          <div className="flex items-center gap-4">
-            {/* Carrito */}
-            <Link
-              onClick={handleClick}
-              to="/carrito"
-              className="p-2 text-blue-brand hover:text-black hover:bg-gray-100 rounded-full transition-all relative"
-            >
-              <ShoppingCart size={24} strokeWidth={2} />
-              {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-red-500 text-xs font-bold text-white rounded-full px-1.5 py-0.5 ring-2 ring-white">
-                  {totalItems}
-                </span>
-              )}
-            </Link>
+                    {/* Iconos lado derecho */}
+                    <div className="flex items-center gap-4">
+                      {/* Favorito-corazon */}
+            <button className="p-2 text-blue-brand hover:text-black hover:bg-gray-100 rounded-full transition-all">
+              <Heart size={24} strokeWidth={2} />
+            </button>
+ {/* Separador */}
+            <div className="h-6 w-px bg-gray-200 mx-1"></div>
+
+
+
+                        {/* Carrito */}
+                        <Link
+                            onClick={handleClick}
+                            to="/carrito"
+                            className="p-2 text-blue-brand hover:text-black hover:bg-gray-100 rounded-full transition-all relative"
+                        >
+                            <ShoppingCart size={24} strokeWidth={2} />
+                            {cart.length > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-red-500 text-xs font-bold text-white rounded-full px-1.5 py-0.5 ring-2 ring-white">
+                                    {cart.length}
+                                </span>
+                            )}
+                        </Link>
 
             {/* Separador */}
             <div className="h-6 w-px bg-gray-200 mx-1"></div>
