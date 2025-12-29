@@ -1,4 +1,4 @@
-// src/context/GlobalContext.jsx
+// context/GlobalContext.jsx
 import React, { createContext } from "react";
 import { useBooks } from "../hooks/useBooks";
 import { useCart } from "../hooks/useCart";
@@ -9,42 +9,105 @@ import { ModalLoading } from "../components/ModalLoading";
 export const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
-    // se utilizan los hooks 
-    const { books, isLoading, setIsLoading, getBookById, setBooks, categories, messages, getMessageById, setMessages } = useBooks();
-    const { cart, addToCart, removeFromCart, setCart } = useCart();
+    // 📚 Libros
+    const {
+        books,
+        isLoading,
+        setIsLoading,
+        getBookById,
+        setBooks,
+        categories,
+        messages,
+        getMessageById,
+        setMessages,
+        carga,
+        setCarga
+    } = useBooks();
+
+    // 🛒 Carrito (con funciones inmutables)
+    const {
+        cart,              // 👈 ya con subtotales
+        addToCart,
+        setCart,
+        removeFromCart,
+        increaseQuantity,
+        decreaseQuantity,
+        totalItems,
+        totalAmount,
+    } = useCart();
+
+    // 📦 Modal
     const { open, checkout, setCheckout, setOpen } = useModal();
-    const { searchQuery, setSearchQuery, filterBooks, searchTitle, setSearchTitle, searchAutor, setSearchAutor, searchCategory, setSearchCategory, filterSidebarBooks } = useSearchBooks();
+
+    // 🔍 Búsqueda
+    const {
+        searchQuery,
+        setSearchQuery,
+        filterBooks,
+        searchTitle,
+        setSearchTitle,
+        searchAutor,
+        setSearchAutor,
+        searchCategory,
+        setSearchCategory,
+        filterSidebarBooks,
+        HandleFilterChange,
+        HandleDelete,
+        handleCargar
+    } = useSearchBooks();
+
+    // 👀 Logs para depuración
+    console.log("🛒 GlobalContext cart:", cart);
+    console.log("📊 GlobalContext totalAmount:", totalAmount);
 
     return (
         <GlobalContext.Provider
             value={{
+                // 📚 Libros
                 books,
                 isLoading,
                 setIsLoading,
                 getBookById,
                 setBooks,
+                categories,
+                carga,
+                setCarga,
+
+                // 🛒 Carrito
                 cart,
                 addToCart,
-                removeFromCart,
                 setCart,
+                removeFromCart,
+                increaseQuantity,
+                decreaseQuantity,
+                totalItems,
+                totalAmount,
+
+                // 🔍 Búsqueda
                 searchQuery,
                 setSearchQuery,
                 searchTitle,
                 setSearchTitle,
                 searchAutor,
-                setSearchAutor, 
+                setSearchAutor,
                 searchCategory,
                 setSearchCategory,
                 filterBooks,
-                categories,
                 filterSidebarBooks,
+                HandleDelete,
+                HandleFilterChange,
+                handleCargar,
+
+                // 💬 Mensajes
+                messages,
+                getMessageById,
+                setMessages,
+
+                // 📦 Modal
                 open,
                 checkout,
                 setCheckout,
                 setOpen,
-                messages,
-                getMessageById,
-                setMessages
             }}
         >
             {children}
