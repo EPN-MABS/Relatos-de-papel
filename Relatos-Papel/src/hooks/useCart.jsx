@@ -67,6 +67,12 @@ export const useCart = () => {
     0
   );
 
+
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  
   // 👀 Logs para depuración
   console.log("🛒 Estado del carrito:", cartWithSubtotals);
   console.log("📊 totalItems:", totalItems, " | totalAmount:", totalAmount);
@@ -77,7 +83,9 @@ export const useCart = () => {
     increaseQuantity,
     decreaseQuantity,
     removeFromCart,
+    clearCart,  
     totalItems,
     totalAmount,
+  
   };
 };
