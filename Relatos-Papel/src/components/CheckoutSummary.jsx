@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+
+import { GlobalContext } from "../context/GlobalContext";
+
 
 export const CheckoutSummary = ({ items }) => {
   const navigate = useNavigate();
@@ -7,6 +10,9 @@ export const CheckoutSummary = ({ items }) => {
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [showProcessingModal, setShowProcessingModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const { clearCart, setIsLoading } = useContext(GlobalContext);
+ 
+  const [isRedirecting, setIsRedirecting] = useState(false);
 
   const subtotal = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -39,9 +45,25 @@ export const CheckoutSummary = ({ items }) => {
   };
 
   const handleGoHome = () => {
-    navigate("/");
-  };
+  
+    setShowSuccessModal(false);
+  
 
+    setIsLoading(true);
+  
+
+    setTimeout(() => {
+      clearCart();
+    }, 1500);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      navigate("/overview");
+    }, 3500);
+  };
+  
+  
+  
   return (
     <>
       {/* RESUMEN */}
@@ -127,6 +149,13 @@ export const CheckoutSummary = ({ items }) => {
           >
             Volver a la tienda
           </button>
+        </Modal>
+      )}
+
+{isRedirecting && (
+        <Modal isFinal={true}>
+          <h3 className="text-lg font-medium mb-4"> regresando...</h3>
+          <div className="animate-spin w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full mx-auto"></div>
         </Modal>
       )}
     </>

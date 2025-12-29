@@ -9,7 +9,7 @@ export const CheckoutItem = ({ item }) => {
       {/* PRODUCTO */}
       <div className="flex items-center gap-4">
         <img
-          src={BOOK_IMAGE_URL}
+           src={item.image}
           alt={item.title}
           className="w-14 h-20 object-cover rounded border"
         />

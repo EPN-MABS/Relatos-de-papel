@@ -28,10 +28,10 @@ export const GlobalProvider = ({ children }) => {
     const {
         cart,              // 👈 ya con subtotales
         addToCart,
-        setCart,
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
+        clearCart,
         totalItems,
         totalAmount,
     } = useCart();
@@ -76,8 +76,10 @@ export const GlobalProvider = ({ children }) => {
                 // 🛒 Carrito
                 cart,
                 addToCart,
-                setCart,
+                clearCart,  
+                
                 removeFromCart,
+           
                 increaseQuantity,
                 decreaseQuantity,
                 totalItems,
