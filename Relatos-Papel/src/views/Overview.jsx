@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalContext"; // ahora usamos el contexto global
 import { Sidebar } from "../components/Sidebar";
 import { BookCard } from "../components/BookCard";
@@ -6,28 +6,40 @@ import { Pagination } from "../components/Pagination";
 import { Loading } from "../components/Loading";
 
 export const Overview = () => {
-    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks, getMessageById } = useContext(GlobalContext); // consumimos libros desde el contexto
+    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks, getMessageById, handleCargar } = useContext(GlobalContext); // consumimos libros desde el contexto
+    let busqueda = false;
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8; // Ajusta según cuántos quieras ver
     let booksToDisplay = books;
 
     if (searchQuery.length !== 0) {
         booksToDisplay = filterBooks(booksToDisplay); // filtrar libros según búsqueda
+        busqueda = true;
     }
 
     if (searchTitle.length !== 0) {
-        booksToDisplay = filterSidebarBooks(booksToDisplay); 
+        booksToDisplay = filterSidebarBooks(booksToDisplay);
+        busqueda = true;
     }
 
     if (searchAutor.length !== 0) {
         booksToDisplay = filterSidebarBooks(booksToDisplay);
+        busqueda = true;
     }
 
-    if (searchCategory.length !== 0) {
+    if (searchCategory.length !== 0 && (typeof searchCategory === 'string')) {
         booksToDisplay = filterSidebarBooks(booksToDisplay);
+        busqueda = true;
     }
 
     // --- CÁLCULOS DE PAGINACIÓN ---
+
+    useEffect(() => {
+        if (busqueda) {
+            setCurrentPage(1);
+        }
+    }, [busqueda]);
+
     const indexOfLastBook = currentPage * itemsPerPage;
     const indexOfFirstBook = indexOfLastBook - itemsPerPage;
     const currentBooks = booksToDisplay.slice(indexOfFirstBook, indexOfLastBook);
