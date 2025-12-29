@@ -3,28 +3,7 @@ import { GlobalContext } from "../context/GlobalContext";
 import { Category } from "./Category";
 
 export const Sidebar = () => {
-    const { setSearchQuery, setSearchTitle, setSearchAutor, setSearchCategory } = useContext(GlobalContext);
-    const HandleFilterChange = () => {
-        setSearchTitle(document.getElementById("titulo").value);
-        setSearchAutor(document.getElementById("autor").value);
-        setSearchQuery(document.getElementById("clave").value);
-        setSearchCategory(document.getElementById("category").value);
-        const deleteButton = document.getElementById("deleteFilter");
-        deleteButton.classList.remove("hidden");
-    }
-
-    const HandleDelete = () => {
-        document.getElementById("titulo").value = "";
-        document.getElementById("autor").value = "";
-        document.getElementById("clave").value = "";
-        document.getElementById("category").value = "";
-        setSearchTitle(document.getElementById("titulo").value);
-        setSearchAutor(document.getElementById("autor").value);
-        setSearchQuery(document.getElementById("clave").value);
-        setSearchCategory(document.getElementById("category").value);
-        const deleteButton = document.getElementById("deleteFilter");
-        deleteButton.classList.add("hidden");
-    }
+    const { HandleFilterChange, HandleDelete } = useContext(GlobalContext);
 
     return (
         <aside className="w-full md:w-64 flex-shrink-0 space-y-6 bg-white p-4 rounded-lg border border-gray-100 h-fit">
