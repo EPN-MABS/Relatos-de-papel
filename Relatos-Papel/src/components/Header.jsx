@@ -5,10 +5,11 @@ import { GlobalContext } from "../context/GlobalContext";
 import { SearchBook } from "./SearchBook";
 
 export const Header = () => {
-  const { totalItems, setCheckout } = useContext(GlobalContext);
+  const { totalItems, setCheckout, setOpen, open } = useContext(GlobalContext);
 
   const handleClick = () => {
-    setCheckout(false);
+      setCheckout(false);
+      setOpen(!open);
   };
 
     return (
@@ -41,7 +42,6 @@ export const Header = () => {
             {/* Carrito */}
             <Link
               onClick={handleClick}
-              to="/carrito"
               className="p-2 text-blue-brand hover:text-black hover:bg-gray-100 rounded-full transition-all relative"
             >
               <ShoppingCart size={24} strokeWidth={2} />

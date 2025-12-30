@@ -6,7 +6,7 @@ import { Pagination } from "../components/Pagination";
 import { Loading } from "../components/Loading";
 
 export const Overview = () => {
-    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks, getMessageById, handleCargar } = useContext(GlobalContext); // consumimos libros desde el contexto
+    const { books, isLoading, searchQuery, filterBooks, searchTitle, searchAutor, searchCategory, filterSidebarBooks } = useContext(GlobalContext); // consumimos libros desde el contexto
     let busqueda = false;
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8; // Ajusta según cuántos quieras ver
@@ -53,7 +53,7 @@ export const Overview = () => {
     if (isLoading)
         return (
             <div className="text-center">
-                <Loading mensaje={getMessageById(2)} />
+                <Loading />
             </div>
         );
 
