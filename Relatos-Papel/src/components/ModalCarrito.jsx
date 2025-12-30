@@ -16,7 +16,7 @@ export const ModalCarrito = () => {
 
   return (
     <div
-      className="fixed inset-0  bg-opacity-30 z-50 flex items-start justify-end pt-16"
+      className="fixed top-16 right-10 z-50 flex justify-end "
       onClick={handleOverlayClick}
     >
       <div className="bg-white rounded-lg shadow-lg p-4 w-80 relative">

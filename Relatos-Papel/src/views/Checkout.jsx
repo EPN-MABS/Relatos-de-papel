@@ -1,7 +1,11 @@
-import React from "react";
+
+
+import React, { useContext } from "react";
 import { CheckoutItem } from "../components/CheckoutItem";
 import { CheckoutSummary } from "../components/CheckoutSummary";
 
+
+import { GlobalContext } from "../context/GlobalContext";
 /*
 DATA MOCK (SOLO REFERENCIA, NO USADO)
 const mockCart = [
@@ -16,6 +20,9 @@ const mockCart = [
 */
 
 const Checkout = () => {
+
+  const { cart } = useContext(GlobalContext);
+
   return (
     <div className="bg-gray-50 min-h-screen py-8">
       <div className="max-w-7xl mx-auto px-4">
@@ -30,6 +37,11 @@ const Checkout = () => {
               <div className="text-center">Cantidad</div>
               <div className="text-center">Subtotal</div>
             </div>
+
+            {cart.map(item => (
+              <CheckoutItem key={item.id} item={item} />
+            ))}
+
 
             {/* DATOS DE FACTURACIÓN */}
             <div className="mt-8">
@@ -65,7 +77,7 @@ const Checkout = () => {
           {/* RESUMEN (MAQUETA) */}
           <div className="w-full lg:w-80">
             
-            <CheckoutSummary items={[]} />
+          <CheckoutSummary items={cart} />
           </div>
         </div>
       </div>

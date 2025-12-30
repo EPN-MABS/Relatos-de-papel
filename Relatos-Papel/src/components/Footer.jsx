@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter, Mail, BookOpen } from "lucide-react";
+import { Facebook, Instagram, Twitter, Mail, BookOpen, Apple } from "lucide-react";
 
 export const Footer = () => {
     return (
@@ -7,7 +7,7 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-gray-800 pb-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 border-b border-gray-800 pb-8">
                     
 
                     <div className="space-y-4">
@@ -22,6 +22,7 @@ export const Footer = () => {
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             Tu librería favorita online. Encuentra historias que inspiran, educan y transforman.
                         </p>
+                        
                     </div>
 
 
@@ -52,6 +53,16 @@ export const Footer = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-400">
                             <Mail size={16} />
                             <span>contacto@relatosdepapel.com</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 className="text-lg font-bold mb-4 text-gray-100">Metodo de Pago</h3>
+                        <div className="flex gap-4 mb-4">
+                            <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-all group">
+                                <img className = "w-40" src="public/images/credit-card.png" alt="visa" />
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
