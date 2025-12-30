@@ -17,9 +17,6 @@ export const GlobalProvider = ({ children }) => {
         getBookById,
         setBooks,
         categories,
-        messages,
-        getMessageById,
-        setMessages,
         carga,
         setCarga
     } = useBooks();
@@ -99,11 +96,6 @@ export const GlobalProvider = ({ children }) => {
                 HandleDelete,
                 HandleFilterChange,
                 handleCargar,
-
-                // 💬 Mensajes
-                messages,
-                getMessageById,
-                setMessages,
 
                 // 📦 Modal
                 open,

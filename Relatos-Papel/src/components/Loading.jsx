@@ -1,9 +1,8 @@
 import React from 'react';
 
-export const Loading = (mensaje) => {
-    if (mensaje.mensaje === undefined) {
-        mensaje = "Cargando...";
-    }
+export const Loading = () => {
+    const mensaje = "Cargando...";
+
     return (
         <>
             <div className="text-center">
