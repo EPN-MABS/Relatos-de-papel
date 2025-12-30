@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { booksData } from "../data/books";
-import { messagesData } from "../data/messages";
 
 export const useBooks = () => {
     const [books, setBooks] = useState([]);
-    const [messages, setMessages] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [carga, setCarga] = useState(false);
     const [categories, setCategories] = useState([]);
@@ -22,7 +20,6 @@ export const useBooks = () => {
                     }
                 });
                 setCategories(Array.from(mapaObjetos.values()));
-                setMessages(messagesData);
                 setIsLoading(false);
             }, 2000);
             return () => clearTimeout(timer);
@@ -32,8 +29,6 @@ export const useBooks = () => {
 
     const getBookById = (id) =>
         books.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
-    const getMessageById = (id) =>
-        messages.find((b) => String(b.id) === String(id) || Number(b.id) === Number(id));
 
-    return { books, isLoading, setIsLoading, getBookById, setBooks, categories, messages, setMessages, getMessageById, carga, setCarga };
+    return { books, isLoading, setIsLoading, getBookById, setBooks, categories, carga, setCarga };
 };

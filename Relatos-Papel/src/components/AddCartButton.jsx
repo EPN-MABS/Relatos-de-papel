@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 const AddCartButton = ({ book }) => {
-  const { addToCart, setOpen, open  } = useContext(GlobalContext);
+  const { addToCart, setOpen  } = useContext(GlobalContext);
 
   const handleAdd = () => {
     addToCart(book);   // añade el libro al carrito

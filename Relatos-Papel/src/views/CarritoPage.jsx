@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
-import { ModalOk } from "../components/ModalOK";
 import { useNavigate } from "react-router-dom";
 
 export const CarritoPage = () => {
@@ -111,9 +110,6 @@ export const CarritoPage = () => {
           Pagar
         </button>
       </div>
-
-      {/* Modal de confirmación */}
-      <ModalOk />
     </div>
   );
 };
