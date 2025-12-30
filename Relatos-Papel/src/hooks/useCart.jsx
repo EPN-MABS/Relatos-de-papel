@@ -73,9 +73,7 @@ export const useCart = () => {
   };
 
   
-  // 👀 Logs para depuración
-  console.log("🛒 Estado del carrito:", cartWithSubtotals);
-  console.log("📊 totalItems:", totalItems, " | totalAmount:", totalAmount);
+
 
   return {
     cart: cartWithSubtotals,
