@@ -1,23 +1,10 @@
-
-
 import React, { useContext } from "react";
 import { CheckoutItem } from "../components/CheckoutItem";
 import { CheckoutSummary } from "../components/CheckoutSummary";
 
 
 import { GlobalContext } from "../context/GlobalContext";
-/*
-DATA MOCK (SOLO REFERENCIA, NO USADO)
-const mockCart = [
-  {
-    id: 1,
-    title: "El Principito",
-    author: "Antoine de Saint-Exupéry",
-    price: 25.0,
-    quantity: 1,
-  },
-];
-*/
+
 
 const Checkout = () => {
 

@@ -12,8 +12,6 @@ export const CheckoutSummary = ({ items }) => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const { clearCart, setIsLoading } = useContext(GlobalContext);
  
-  const [isRedirecting, setIsRedirecting] = useState(false);
-
   const subtotal = items.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -47,10 +45,8 @@ export const CheckoutSummary = ({ items }) => {
   const handleGoHome = () => {
   
     setShowSuccessModal(false);
-  
 
     setIsLoading(true);
-  
 
     setTimeout(() => {
       clearCart();
@@ -152,12 +148,7 @@ export const CheckoutSummary = ({ items }) => {
         </Modal>
       )}
 
-{isRedirecting && (
-        <Modal isFinal={true}>
-          <h3 className="text-lg font-medium mb-4"> regresando...</h3>
-          <div className="animate-spin w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full mx-auto"></div>
-        </Modal>
-      )}
+
     </>
   );
 };
