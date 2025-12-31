@@ -5,23 +5,21 @@ import { useNavigate } from "react-router-dom";
 export const CarritoPage = () => {
   const navigate = useNavigate();
   const {
-    cart,              // cada item ya trae book.subtotal desde useCart
+    cart,             
     removeFromCart,
     increaseQuantity,
     decreaseQuantity,
     setCheckout,
-    totalAmount        // calculado en useCart
+    totalAmount        
   } = useContext(GlobalContext);
 
   
-  // 🔹 Checkout simulado
-  const handleCheckout = () => {
+    const handleCheckout = () => {
     setCheckout(false);
    
   };
 
-  // Si el carrito está vacío
-  if (cart.length === 0) {
+    if (cart.length === 0) {
     return (
       <div className="max-w-4xl mx-auto px-6 py-10 text-center text-gray-500">
         Tu carrito está vacío 🛒
@@ -87,7 +85,7 @@ export const CarritoPage = () => {
         </tbody>
       </table>
 
-     {/* Total recalculado en caliente */}
+     {/* Cantidad Total */}
     <div className="text-right font-semibold text-lg mb-6">
         <span key={totalAmount}>Total: S/ {Number(totalAmount).toFixed(2)}</span>
     </div>

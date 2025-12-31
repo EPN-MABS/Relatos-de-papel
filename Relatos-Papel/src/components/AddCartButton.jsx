@@ -5,8 +5,7 @@ const AddCartButton = ({ book }) => {
   const { addToCart, setOpen  } = useContext(GlobalContext);
 
   const handleAdd = () => {
-    addToCart(book);   // añade el libro al carrito
-
+    addToCart(book);   
       setOpen(true);
   
   };

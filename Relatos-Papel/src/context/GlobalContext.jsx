@@ -9,7 +9,7 @@ import { ModalLoading } from "../components/ModalLoading";
 export const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
-    // 📚 Libros
+    // Libros
     const {
         books,
         isLoading,
@@ -21,9 +21,9 @@ export const GlobalProvider = ({ children }) => {
         setCarga
     } = useBooks();
 
-    // 🛒 Carrito (con funciones inmutables)
+    // Funciones del carrito
     const {
-        cart,              // 👈 ya con subtotales
+        cart,      
         addToCart,
         removeFromCart,
         increaseQuantity,
@@ -33,10 +33,10 @@ export const GlobalProvider = ({ children }) => {
         totalAmount,
     } = useCart();
 
-    // 📦 Modal
+    // Modal
     const { open, checkout, setCheckout, setOpen } = useModal();
 
-    // 🔍 Búsqueda
+    // Búsqueda
     const {
         searchQuery,
         setSearchQuery,
@@ -53,14 +53,10 @@ export const GlobalProvider = ({ children }) => {
         handleCargar
     } = useSearchBooks();
 
-    // 👀 Logs para depuración
-    console.log("🛒 GlobalContext cart:", cart);
-    console.log("📊 GlobalContext totalAmount:", totalAmount);
-
     return (
         <GlobalContext.Provider
             value={{
-                // 📚 Libros
+                // Libros
                 books,
                 isLoading,
                 setIsLoading,
@@ -70,19 +66,17 @@ export const GlobalProvider = ({ children }) => {
                 carga,
                 setCarga,
 
-                // 🛒 Carrito
+                // Carrito
                 cart,
                 addToCart,
                 clearCart,  
-                
                 removeFromCart,
-           
                 increaseQuantity,
                 decreaseQuantity,
                 totalItems,
                 totalAmount,
 
-                // 🔍 Búsqueda
+                //  Búsqueda
                 searchQuery,
                 setSearchQuery,
                 searchTitle,
@@ -97,7 +91,7 @@ export const GlobalProvider = ({ children }) => {
                 HandleFilterChange,
                 handleCargar,
 
-                // 📦 Modal
+                // Modal
                 open,
                 checkout,
                 setCheckout,

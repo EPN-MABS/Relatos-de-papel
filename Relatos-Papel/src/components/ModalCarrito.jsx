@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const ModalCarrito = () => {
   const { cart, removeFromCart, totalAmount, open, setOpen } = useContext(GlobalContext);
 
-  // Si el modal no está abierto, no renderizamos nada
+  // Si el modal no está abierto, no  se renderiza
   if (!open) return null;
 
   const handleOverlayClick = (e) => {
@@ -34,9 +34,8 @@ export const ModalCarrito = () => {
                 <span className="flex-1">
                   {book.title} (x{book.quantity})
                 </span>
-                {/* 🔹 Subtotal dinámico */}
+                {/*  Subtotal dinámico */}
                 <span className="ml-2">
-                 {/*  S/ {book.subtotal ? book.subtotal.toFixed(2) : (book.price * book.quantity).toFixed(2)}*/}
                  {book.subtotal.toFixed(2)}
                 </span>
                 <button
@@ -50,9 +49,9 @@ export const ModalCarrito = () => {
           </ul>
         )}
 
-        {/* 🔹 Total dinámico desde el contexto */}
+        {/* Total desde el contexto */}
         <div className="mt-3 text-right font-semibold text-sm">
-          Total: S/ {totalAmount.toFixed(2)}
+            <span key={totalAmount}>Total: S/ {Number(totalAmount).toFixed(2)}</span>
         </div>
 
         <div className="mt-4 flex justify-between">
@@ -63,12 +62,12 @@ export const ModalCarrito = () => {
             Cerrar
           </button>
 
-          {/* 🔹 Navegación hacia CarritoPage */}
+          {/* Navegación hacia CarritoPage */}
           <Link
             to={cart.length > 0 ? "/carrito" : "#"}
             onClick={
               cart.length > 0
-                ? () => setOpen(false) // cerramos modal antes de navegar
+                ? () => setOpen(false) // cierre de modal antes de navegar
                 : (e) => e.preventDefault()
             }
             className={`px-3 py-1 rounded-lg transition-colors text-sm ${
